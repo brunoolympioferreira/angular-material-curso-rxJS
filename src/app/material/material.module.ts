@@ -1,3 +1,5 @@
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+
 import { NgModule } from '@angular/core';
 
 import { MatSliderModule } from '@angular/material/slider';
@@ -6,8 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
 
-import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 @NgModule({
   exports: [
     MatSliderModule,
@@ -16,6 +18,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     MatButtonModule,
     MatSidenavModule,
     MatInputModule,
+    MatListModule
   ],
   declarations: [],
   providers: [
