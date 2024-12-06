@@ -8,13 +8,17 @@ import { concat, interval, map, take, takeWhile, tap } from 'rxjs';
   styleUrl: './progress-spinner.component.scss'
 })
 export class ProgressSpinnerComponent implements OnInit {
-  public loadPercent = 0;
+  public loadingPercent = 0;
   public queryValue = 0;
+  public currentPlayback = 0;
   public queryMode: ProgressBarMode = 'query';
 
   ngOnInit(): void {
-    this.loadingProgress(500, 95)
-      .subscribe(i => this.loadPercent = i);
+    this.loadingProgress(500, 100)
+      .subscribe(i => this.loadingPercent = i);
+
+    this.loadingProgress(350, 100)
+      .subscribe(i => this.currentPlayback = i);
 
     concat(
       interval(3000)
