@@ -15,6 +15,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
 import { MatMomentDateModule } from '@angular/material-moment-adapter'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 
 @NgModule({
   exports: [
@@ -31,6 +32,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter'
     MatDatepickerModule,
     MatNativeDateModule,
     MatMomentDateModule,
+    MatSnackBarModule
   ],
   declarations: [],
   providers: [
