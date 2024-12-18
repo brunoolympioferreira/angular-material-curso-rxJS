@@ -17,6 +17,7 @@ import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
 import { MatMomentDateModule } from '@angular/material-moment-adapter'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatDialogModule } from '@angular/material/dialog'
+import { MatTableModule } from '@angular/material/table'
 
 @NgModule({
   exports: [
@@ -34,7 +35,8 @@ import { MatDialogModule } from '@angular/material/dialog'
     MatNativeDateModule,
     MatMomentDateModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule
   ],
   declarations: [],
   providers: [
